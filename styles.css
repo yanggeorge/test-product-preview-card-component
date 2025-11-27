@@ -1,0 +1,48 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-brown-800: hsl(14, 45%, 36%);
+
+  --text-preset1: 400 40px/100% "YoungSerif", sans-serif;
+  --text-preset1-mobile: 400 36px/100% "YoungSerif", sans-serif;
+  --text-preset2: 400 28px/100% "YoungSerif", sans-serif;
+  --text-preset3: 600 20px/100% "Outfit", sans-serif;
+  --text-preset4: 400 16px/150% "Outfit", sans-serif;
+  --text-preset5: 700 16px/150% "Outfit", sans-serif;
+
+  --spacing-50: 0.25rem; /* 4px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-600: 3rem; /* 48px */
+  --spacing-1600: 8rem; /* 128px */
+}
+
+html,
+body {
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0px;
+}
+
+body {
+  /* 如果不开启特定的抗锯齿设置，字体往往会显得略微发虚、变粗，视觉上就会觉得“宽”了 */
+  /* 针对 Chrome, Safari (Mac) */
+  -webkit-font-smoothing: antialiased;
+  /* 针对 Firefox (Mac) */
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: center;
+
+  /* 这个强制居中不要用 */
+  /* align-items: center; */
+  min-height: 100vh;
+}
