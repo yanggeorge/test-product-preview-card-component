@@ -1,19 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&display=swap");
+
 :root {
   --color-white: hsl(0, 0%, 100%);
-  --color-rose-800: hsl(332, 51%, 32%);
-  --color-rose-50: hsl(330, 100%, 98%);
-  --color-stone-900: hsl(24, 5%, 18%);
-  --color-stone-600: hsl(30, 10%, 34%);
-  --color-stone-150: hsl(30, 18%, 87%);
-  --color-stone-100: hsl(30, 54%, 90%);
-  --color-brown-800: hsl(14, 45%, 36%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-gray: hsl(228, 12%, 48%);
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
 
-  --text-preset1: 400 40px/100% "YoungSerif", sans-serif;
-  --text-preset1-mobile: 400 36px/100% "YoungSerif", sans-serif;
-  --text-preset2: 400 28px/100% "YoungSerif", sans-serif;
-  --text-preset3: 600 20px/100% "Outfit", sans-serif;
-  --text-preset4: 400 16px/150% "Outfit", sans-serif;
-  --text-preset5: 700 16px/150% "Outfit", sans-serif;
+  --text-preset1: 700 32px/100% "Fraunces", sans-serif;
+  --text-preset2: 700 14px/110% "Montserrat", sans-serif;
+  --text-preset3: 500 14px/160% "Montserrat", sans-serif;
+  --text-preset4: 500 12px/120% "Montserrat", sans-serif;
+  --text-preset4-letter-spacing: 5px;
+  --text-preset5: 500 13px/120% "Montserrat", sans-serif;
 
   --spacing-50: 0.25rem; /* 4px */
   --spacing-100: 0.5rem; /* 8px */
@@ -28,8 +29,10 @@
 
 html,
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0px;
+  background-color: var(--color-cream);
+  height: 1002px;
 }
 
 body {
@@ -45,4 +48,88 @@ body {
   /* 这个强制居中不要用 */
   /* align-items: center; */
   min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  max-width: 350px;
+}
+
+.card img {
+  height: 342px;
+  display: block;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  padding: var(--spacing-400);
+  background-color: var(--color-white);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.title .text1 {
+  font: var(--text-preset4);
+  letter-spacing: var(--text-preset4-letter-spacing);
+  color: var(--color-gray);
+}
+
+.title .text2 {
+  font: var(--text-preset1);
+  color: var(--color-black);
+}
+
+.title .text3 {
+  font: var(--text-preset3);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.price .current {
+  font: var(--text-preset1);
+}
+
+.price .original {
+  font: var(--text-preset5);
+}
+
+.button {
+  background-color: var(--color-green-500);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-100);
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 32px;
+}
+
+.button img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  color: var(--color-white);
+}
+
+.button p {
+  font: var(--text-preset2);
+  color: var(--color-white);
 }
