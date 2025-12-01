@@ -61,7 +61,7 @@ body {
   margin-bottom: 172px;
 }
 
-.card img {
+.image-product {
   height: 342px;
   width: 100%;
   display: block;
@@ -145,3 +145,24 @@ body {
 /* * {
   outline: 1px solid red !important;
 } */
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    max-width: none;
+    margin: auto;
+  }
+
+  .image-product {
+    width: 300px;
+    height: 100%;
+  }
+
+  .title {
+    width: 236px;
+  }
+
+  .button {
+    width: 236px;
+  }
+}
