@@ -5,7 +5,7 @@
   --color-white: hsl(0, 0%, 100%);
   --color-black: hsl(212, 21%, 14%);
   --color-cream: hsl(30, 38%, 92%);
-  --color-gray: hsl(228, 12%, 48%);
+  --color-grey: hsl(228, 12%, 48%);
   --color-green-500: hsl(158, 36%, 37%);
   --color-green-700: hsl(158, 42%, 18%);
 
@@ -55,7 +55,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
   max-width: 350px;
 }
 
@@ -63,6 +62,8 @@ body {
   height: 342px;
   display: block;
   object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .content {
@@ -73,6 +74,8 @@ body {
   gap: var(--spacing-300);
   padding: var(--spacing-400);
   background-color: var(--color-white);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .title {
@@ -84,7 +87,8 @@ body {
 .title .text1 {
   font: var(--text-preset4);
   letter-spacing: var(--text-preset4-letter-spacing);
-  color: var(--color-gray);
+  color: var(--color-grey);
+  text-transform: uppercase;
 }
 
 .title .text2 {
@@ -94,6 +98,7 @@ body {
 
 .title .text3 {
   font: var(--text-preset3);
+  color: var(--color-grey);
 }
 
 .price {
@@ -105,10 +110,13 @@ body {
 
 .price .current {
   font: var(--text-preset1);
+  color: var(--color-green-500);
 }
 
 .price .original {
   font: var(--text-preset5);
+  text-decoration: line-through;
+  color: var(--color-grey);
 }
 
 .button {
