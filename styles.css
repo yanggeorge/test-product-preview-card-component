@@ -61,6 +61,11 @@ body {
   margin-bottom: 172px;
 }
 
+picture {
+  /* 在 Flexbox 眼里，<picture> 不存在了，它看到的直接子元素又变回了 <img> */
+  display: contents;
+}
+
 .image-product {
   height: 342px;
   width: 100%;
